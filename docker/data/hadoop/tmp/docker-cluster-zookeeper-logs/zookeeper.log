@@ -1,0 +1,84 @@
+2020-10-21 12:44:47,357 - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /etc/zookeeper/conf/zoo.cfg
+2020-10-21 12:44:47,404 - INFO  [main:QuorumPeer$QuorumServer@149] - Resolved hostname: master to address: master/172.18.0.9
+2020-10-21 12:44:47,417 - WARN  [main:QuorumPeer$QuorumServer@155] - Failed to resolve address: hive
+java.net.UnknownHostException: hive: Name or service not known
+	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at java.net.InetAddress.getByName(InetAddress.java:1076)
+	at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:148)
+	at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.<init>(QuorumPeer.java:133)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:207)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:119)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+2020-10-21 12:44:47,423 - WARN  [main:QuorumPeerConfig@284] - No server failure will be tolerated. You need at least 3 servers.
+2020-10-21 12:44:47,424 - INFO  [main:QuorumPeerConfig@331] - Defaulting to majority quorums
+2020-10-21 12:44:47,426 - ERROR [main:QuorumPeerMain@85] - Invalid config, exiting abnormally
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing /etc/zookeeper/conf/zoo.cfg
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:123)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+Caused by: java.lang.IllegalArgumentException: /usr/local/zookeeper/myid file is missing
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:341)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:119)
+	... 2 more
+2020-10-21 12:46:08,548 - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /etc/zookeeper/conf/zoo.cfg
+2020-10-21 12:46:08,571 - INFO  [main:QuorumPeer$QuorumServer@149] - Resolved hostname: master to address: master/172.21.0.9
+2020-10-21 12:46:08,578 - WARN  [main:QuorumPeer$QuorumServer@155] - Failed to resolve address: hive
+java.net.UnknownHostException: hive: Name or service not known
+	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at java.net.InetAddress.getByName(InetAddress.java:1076)
+	at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:148)
+	at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.<init>(QuorumPeer.java:133)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:207)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:119)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+2020-10-21 12:46:08,581 - WARN  [main:QuorumPeerConfig@284] - No server failure will be tolerated. You need at least 3 servers.
+2020-10-21 12:46:08,581 - INFO  [main:QuorumPeerConfig@331] - Defaulting to majority quorums
+2020-10-21 12:46:08,582 - ERROR [main:QuorumPeerMain@85] - Invalid config, exiting abnormally
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing /etc/zookeeper/conf/zoo.cfg
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:123)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+Caused by: java.lang.IllegalArgumentException: /usr/local/zookeeper/myid file is missing
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:341)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:119)
+	... 2 more
+2020-10-21 12:52:36,258 - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /etc/zookeeper/conf/zoo.cfg
+2020-10-21 12:52:36,284 - INFO  [main:QuorumPeer$QuorumServer@149] - Resolved hostname: master to address: master/172.22.0.7
+2020-10-21 12:52:36,290 - WARN  [main:QuorumPeer$QuorumServer@155] - Failed to resolve address: hive
+java.net.UnknownHostException: hive: Name or service not known
+	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at java.net.InetAddress.getByName(InetAddress.java:1076)
+	at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:148)
+	at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.<init>(QuorumPeer.java:133)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:207)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:119)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+2020-10-21 12:52:36,294 - WARN  [main:QuorumPeerConfig@284] - No server failure will be tolerated. You need at least 3 servers.
+2020-10-21 12:52:36,294 - INFO  [main:QuorumPeerConfig@331] - Defaulting to majority quorums
+2020-10-21 12:52:36,296 - ERROR [main:QuorumPeerMain@85] - Invalid config, exiting abnormally
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing /etc/zookeeper/conf/zoo.cfg
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:123)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+Caused by: java.lang.IllegalArgumentException: /usr/local/zookeeper/myid file is missing
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:341)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:119)
+	... 2 more
